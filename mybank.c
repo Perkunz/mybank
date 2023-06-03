@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -25,9 +26,26 @@ int main()
 
         value = strcmp(pass, val);
 
-        if ( value == 0)
-        {
+        if value( != 0 )
+                while (i >= 0)
+                {
+                        printf("\n Your Passwords not correct \n");
+                        printf("\n Try again, Re-enter password \n");
+                        scanf("%s", val);
+
+                        value = strcmp(pass, val);
+                
+                        if ( value == 0)
+                        {
+                                passwordCorrect = 1;
+                                break;
+                        }
+                        if(i > 0)
+                                printf("Passwords dont match. You have %d more attempts \n", i);
+                        else
+                                printf("Sorry. You cant create an account");
+                                        i--;
+                }
+        else
                 passwordCorrect = 1;
-                break;
-        }
 }
