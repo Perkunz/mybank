@@ -2,5 +2,32 @@
 
 int main()
 {
-        Printf("hello, Welcome to Mybank. Banking made easy.");
+        /* Greeting message */
+        printf("\nHello, Welcome to Mybank. Banking made easy. \n");
+
+        /* Create an account - Implementing registration */
+        char firstname[50], lastname[50]
+
+        printf("Please create an account \nEnter your first and last names here: ");
+        scanf("%s %s", firstname, lastname)
+
+        char pass [20];
+        char val[20];
+        int value;
+        int i = 3;
+        int passwordCorrect = 0; //flag var to track correct password validation.
+
+        printf("Create a password: ");
+        scanf("%s", pass);
+
+        print("confirm password; ");
+        scanf("%s", val);
+
+        value = strcmp(pass, val);
+
+        if ( value == 0)
+        {
+                passwordCorrect = 1;
+                break;
+        }
 }
